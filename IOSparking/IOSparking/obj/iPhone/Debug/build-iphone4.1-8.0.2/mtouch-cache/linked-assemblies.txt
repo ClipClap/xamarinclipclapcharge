@@ -1,0 +1,16 @@
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.Xml.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/Mono.Dynamic.Interpreter.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/clipclapcharge.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/Newtonsoft.Json.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/PLCrashReporterUnifiedBinding.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.Net.Http.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.Xml.Linq.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.ServiceModel.Internals.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/RestSharp.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/System.Core.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/mscorlib.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/Xamarin.Insights.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/obj/iPhone/Debug/build-iphone4.1-8.0.2/mtouch-cache/Link/IOSparking.exe

@@ -1,0 +1,7 @@
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/obj/Debug/clipclapcharge.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/obj/Debug/clipclapcharge.dll.mdb
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/bin/Debug/Newtonsoft.Json.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/bin/Debug/RestSharp.dll
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/bin/Debug/clipclapcharge.dll.mdb
+/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/clipclapcharge/clipclapcharge/bin/Debug/clipclapcharge.dll
