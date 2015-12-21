@@ -11,9 +11,9 @@ namespace clipclapcharge
 {
 	public class CCService
 	{
-		private string urlDevelop="https://clipclap.co/Development/gatewayClipClap/sdk/";
+		
 		private string urlProduction="https://clipclap.co/Production/gatewayClipClap/sdk/";
-		private string urlDeepAndroid= "ClipClapBilleteraD://?type=ClipClapWeb&token=";
+
 		private string urlDeepAndroidProduction= "ClipClapBilletera://?type=ClipClapWeb&token=";
 		private string callback;
 		private int type ;
@@ -23,6 +23,11 @@ namespace clipclapcharge
 		private string json;
 		private string token="aaaa";
 		public CCService (int type)
+		{
+			setTypes (PRODUCTION);
+		}
+
+		public CCService ()
 		{
 			setTypes (PRODUCTION);
 		}
@@ -48,10 +53,9 @@ namespace clipclapcharge
 
 		public void getToken(){
 
-			string url = urlDevelop;
-			if (type == PRODUCTION) {
+			string url;
 				url = urlProduction;
-			}
+			
 			var client = new RestClient(url);
 
 
@@ -101,8 +105,7 @@ namespace clipclapcharge
 		}
 
 		public string getUrlDeep(){
-			if(type==DEVELOPMENT)
-				return urlDeepAndroid+token+"&callbackurl="+callback;
+			
 			return urlDeepAndroidProduction+token+"&callbackurl="+callback;
 		
 		}

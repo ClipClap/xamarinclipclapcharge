@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="parking/parking.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_23" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="parking/MainActivity.cs">
+    <Files>
+      <File FileName="parking/MainActivity.cs" Line="37" Column="34" />
+      <File FileName="../clipclapcharge/clipclapcharge/CCService.cs" Line="1" Column="1" />
+      <File FileName="../IOSparking/IOSparking/ViewController.cs" Line="1" Column="1" />
+      <File FileName="../IOSparking/IOSparking/Info.plist" />
+      <File FileName="../IOSparking/IOSparking/AppDelegate.cs" Line="96" Column="3" />
+      <File FileName="../clipclapcharge/clipclapcharge/CCBilleteraPayment.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint traceExpression="{content}" file="/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/ViewController.cs" line="55" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -7,7 +7,7 @@ namespace IOSparking
 {
 	public partial class ViewController : UIViewController, SaveTokenListener
 	{
-		CCService ccService = new CCService(CCService.DEVELOPMENT);
+		CCService ccService = new CCService();
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
