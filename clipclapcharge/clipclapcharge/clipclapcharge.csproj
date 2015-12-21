@@ -41,7 +41,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Json70r1\Bin\Portable40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\..\restsharp-105.2.3\lib\android\RestSharp.dll</HintPath>
