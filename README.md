@@ -92,24 +92,52 @@ Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
 **Paso 3: Decirle a ClipClap Billetera que realice el cobro**
 
     //Obteniendo de ClipClap un token único para este cobro. Hasta este momento todavía el cobro no se ha hecho efectivo.
-    [[CCBilleteraPayment shareInstance] getPaymentTokenWithBlock:^(NSString *token, NSError *error) {
-        
-        if (error)
-        {
-            //Aqui debe mostrarse al usuario que hubo problemas para realizar el pago.
-        }
-        else
-        {
-            //Antes de hacer efectivo el cobro con el 'token' obtenido usted debe guardar
-            //este ´token´ en su sistema de información.
-            
-            //Luego de que haya guardado el ´token´ se procede llamar a ClipClap Billetera
-            //para que gestione el cobro.
-            [[CCBilleteraPayment shareInstance] commitPaymentWithToken:token];
-        }
-    }];
+    
+    try
+	{
+		//Registrando esta instancia con la interfaz 'SaveTokenListener'.
+		ccService.setSaveTokenListener(this);
 
-> ***IMPORTANTE:*** Si al momento de guardar el ´token´ en su sistema de información falla, no convoque a ClipClap Billetera para que gestione el pago.
+		//Obteniendo de CliClap el token del cobro.
+		ccService.getToken();
+	}
+	catch(Exception e)
+	{
+		//Mostrar al usuario el error
+	}
+
+	.
+	.
+	.
+
+	//Implementando el método de la interfaz 'SaveTokenListener'
+	public void saveToken(string content){
+
+		//Obteniendo el url para abrir ClipClapBilletera
+		string link = ccService.getUrlDeep ();
+		
+		try 
+		{
+			/*Para abrir ClipClap Billetera en Xamarin iOS*/				
+			InvokeOnMainThread (delegate {  
+				UIApplication.SharedApplication.OpenUrl(new Foundation.NSUrl(link));
+			});
+			
+			//--------------------------------
+			
+			/*Para abrir ClipClap Billetera en Xamarin Android*/
+			var uri = Android.Net.Uri.Parse (link);
+            var intent = new Intent (Intent.ActionView, uri);
+            StartActivity (intent);
+		
+		} catch (Exception ex) {
+
+			//Show error message to the user
+		}
+	}
+		
+
+> ***IMPORTANTE:*** Si al momento de guardar el ´token´ en su sistema de información este falla, no convoque a ClipClap Billetera para que gestione el pago.
 
 
 ## Tipos de impuesto ##
@@ -167,7 +195,6 @@ Si el cobro fue rechazado por el cliente:
 Si hubo un error realizando el cobro:
 
     "Your_URL?response=error&message=Mostrar este error en tu aplicación Xamarin iOS"
-
 
 
 
