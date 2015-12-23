@@ -21,7 +21,7 @@ Recuerda que puedes cambiar entre entorno de prueba y de producción, para lleva
 
 ## Integración ##
 
-Sigue los siguientes pasos para conocer cómo se debe integrar el framework de pago ClipClap en tu aplicación Xamarin iOS y Android:
+Sigue los siguientes pasos para conocer cómo se debe integrar el framework de pago ClipClap en tu aplicación Xamarin iOS y Android, recuerda descargar la librería clipclapcharge. Los proyectos IOSParking y parking son ejemplos sencillos de IOS y Android respectivamente que utilizan la librería clipclapcharge:
 
 **Paso 1: En el proyecto de Xamarin Studio de tu aplicación integra el framework así:**
 
