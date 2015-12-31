@@ -7,21 +7,21 @@ Te recordamos que para poder hacer de esta integración debes descargar la aplic
 ## Prerrequisitos ##
 
  1. ***Tener una cuenta ClipClap Datáfono:***
-Para poder realizar la integración con ClipClap debes primero tener una cuenta en ClipClap Datáfono, puedes hacer el proceso de registro siguiendo este [link](https://clipclap.co/) o desde la misma aplicación ClipClap Datáfono.
+Para poder realizar la integración con ClipClap debes primero tener una cuenta en ClipClap Datáfono, puedes hacer el proceso de registro siguiendo este [link](https://clipclap.co/datafono/dashboard/php/views/signup.php) o desde la misma aplicación ClipClap Datáfono.
 
  2. ***Tener el secretKey de tu negocio:***
-Una vez tengas tu usuario Datáfono, tendrás que tener a la mano el “secreKey” de tu negocio, puedes consultar los pasos para adquirirlos en detalle [aquí](https://clipclap.co/).
+Una vez tengas tu usuario Datáfono, tendrás que tener a la mano el “secreKey” de tu negocio, puedes consultar los pasos para adquirirlos en detalle [aquí](https://clipclap.co/datafono/dashboard/php/views/settings.php).
 
  3. **ClipClap Billetera para tus clientes:**
 Para que tus usuarios puedan acceder al evento de pago de ClipClap deben tener instalada la aplicación Billetera, esta permitirá realizar los pagos de forma rápida y segura para tus clientes.
 
  4. ***Entorno de Prueba y Entorno de Producción:***
-Recuerda que puedes cambiar entre entorno de prueba y de producción, para llevar un mayor control de tu integración. puedes aprender cómo hacerlo en el siguiente [link](https://clipclap.co/).
+Recuerda que puedes cambiar entre entorno de prueba y de producción, para llevar un mayor control de tu integración. puedes cambiarlo en el siguiente [link](https://clipclap.co/datafono/dashboard/php/views/settings.php).
 
 
 ## Integración ##
 
-Sigue los siguientes pasos para conocer cómo se debe integrar el framework de pago ClipClap en tu aplicación Xamarin iOS y Android, recuerda descargar la librería clipclapcharge. Los proyectos IOSParking y parking son ejemplos sencillos de IOS y Android respectivamente que utilizan la librería clipclapcharge:
+Sigue los siguientes pasos para conocer cómo se debe integrar el framework de pago ClipClap en tu aplicación Xamarin iOS y Android. Recuerda descargar la librería clipclapcharge, dentro el PCL (Portable class Library) para integrar a tu proyecto. Los proyectos IOSParking y parking son ejemplos sencillos de IOS y Android respectivamente que utilizan la librería clipclapcharge:
 
 **Paso 1: En el proyecto de Xamarin Studio de tu aplicación integra el framework así:**
 
