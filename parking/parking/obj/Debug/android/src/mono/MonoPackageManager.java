@@ -82,8 +82,6 @@ class MonoPackageManager_Resources {
 		"parking.dll",
 		"Xamarin.Insights.dll",
 		"clipclapcharge.dll",
-		"Newtonsoft.Json.dll",
-		"RestSharp.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",
 		"System.ComponentModel.Annotations.dll",
@@ -131,6 +129,8 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
+		"Newtonsoft.Json.dll",
+		"RestSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -2,6 +2,14 @@ parking.MainActivity, parking;md50e82b64e8c39b28fa54239e7454691dd.MainActivity
 parking.MainActivity, parking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50e82b64e8c39b28fa54239e7454691dd.MainActivity
 parking.MainActivity;md50e82b64e8c39b28fa54239e7454691dd.MainActivity
 parking.MainActivity;md50e82b64e8c39b28fa54239e7454691dd.MainActivity
+parking.ItemAdapter, parking;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter
+parking.ItemAdapter, parking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter
+parking.ItemAdapter;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter
+parking.ItemAdapter;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter
+parking.ItemAdapter/ItemViewHolder, parking;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter_ItemViewHolder
+parking.ItemAdapter+ItemViewHolder, parking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter_ItemViewHolder
+parking.ItemAdapter.ItemViewHolder;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter_ItemViewHolder
+parking.ItemAdapter_ItemViewHolder;md50e82b64e8c39b28fa54239e7454691dd.ItemAdapter_ItemViewHolder
 Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights;md55aa83cb61847c4249bb0dd44fd0a56e6.BackgroundManager
 Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null;md55aa83cb61847c4249bb0dd44fd0a56e6.BackgroundManager
 Xamarin.InsightsCore.BackgroundManager;md55aa83cb61847c4249bb0dd44fd0a56e6.BackgroundManager

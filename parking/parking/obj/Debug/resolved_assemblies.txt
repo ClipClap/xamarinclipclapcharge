@@ -4,8 +4,6 @@
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/Mono.Android.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/Xamarin.Insights.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/clipclapcharge.dll
-/Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/Newtonsoft.Json.dll
-/Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/RestSharp.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Core.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/mscorlib.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Collections.Concurrent.dll
@@ -57,6 +55,8 @@
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Runtime.Serialization.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.ServiceModel.Internals.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Net.Http.dll
+/Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/Newtonsoft.Json.dll
+/Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/RestSharp.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Xml.Linq.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.ComponentModel.DataAnnotations.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/assemblies/System.Numerics.dll

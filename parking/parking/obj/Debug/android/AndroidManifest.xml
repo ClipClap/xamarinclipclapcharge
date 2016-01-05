@@ -5,7 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@mipmap/icon" android:label="MainActivity" android:name="md50e82b64e8c39b28fa54239e7454691dd.MainActivity">
+    <activity android:icon="@mipmap/icon" android:label="MainActivity" android:windowSoftInputMode="stateUnspecified|adjustPan" android:name="md50e82b64e8c39b28fa54239e7454691dd.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

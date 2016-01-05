@@ -40,3 +40,4 @@
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/bin/Debug/clipclapcharge.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/bin/Debug/Newtonsoft.Json.dll
 /Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/bin/Debug/RestSharp.dll
+/Users/josedavidmantilla/StudioProjects/sdk/github/xamarinclipclapcharge/parking/parking/obj/Debug/res/layout/item.xml
