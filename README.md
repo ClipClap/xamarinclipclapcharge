@@ -29,7 +29,7 @@ Sigue los siguientes pasos para conocer cómo se debe integrar el framework de p
 
 ![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/2.png)
 
-![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/6.png) 
+![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/3.png) 
 
 ![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/4.png)
 
