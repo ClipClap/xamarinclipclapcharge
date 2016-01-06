@@ -121,11 +121,16 @@ namespace parking
 		}
 
 		public void saveToken(string content){
-			
-			var uri = Android.Net.Uri.Parse (ccService.getUrlDeep());
-		
-			var intent = new Intent (Intent.ActionView, uri);
-			StartActivity (intent);	
+
+			try{
+				var uri = Android.Net.Uri.Parse (ccService.getUrlDeep());
+				var intent = new Intent (Intent.ActionView, uri);
+				StartActivity (intent);	
+			}catch(Exception ex){
+				var uri = Android.Net.Uri.Parse (CCBilleteraPayment.BILLETERA_PLAYSTORE);
+				var intent = new Intent (Intent.ActionView, uri);
+				StartActivity (intent);	
+			}
 		}
 	}
 }

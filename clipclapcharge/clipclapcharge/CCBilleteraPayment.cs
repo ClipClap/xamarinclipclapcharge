@@ -24,6 +24,8 @@ namespace clipclapcharge
 		private  string TAXVALUE="taxValue";
 		private  string NETVALUE="netValue";
 		private  string DESCRIPTION="description";
+		public static  string BILLETERA_PLAYSTORE="https://play.google.com/store/apps/details?id=clipclap.app.clip&hl=es";
+		public static  string BILLETERA_APPSTORE="'https://itunes.apple.com/app/id1000072986";
 
 		public CCBilleteraPayment (string secretKey)
 		{

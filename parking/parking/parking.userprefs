@@ -2,11 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_23" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
     <Files>
-      <File FileName="MainActivity.cs" Line="77" Column="28" />
+      <File FileName="MainActivity.cs" Line="130" Column="38" />
+      <File FileName="Item.cs" Line="1" Column="1" />
+      <File FileName="ItemAdapter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.parking AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
