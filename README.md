@@ -133,7 +133,8 @@ Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
 		} catch (Exception ex) {
                            	/*Para abrir ClipClap Billetera en Xamarin iOS*/				
 			InvokeOnMainThread (delegate {  
-				UIApplication.SharedApplication.OpenUrl(new 				        Foundation.NSUrl(CCBilleteraPayment.BILLETERA_APPSTORE));
+				UIApplication.SharedApplication.OpenUrl(new Foundation.NSUrl(
+				CCBilleteraPayment.BILLETERA_APPSTORE));
 			});
 			
 			//No tiene instalada la billetera Android
