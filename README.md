@@ -29,7 +29,7 @@ Sigue los siguientes pasos para conocer cómo se debe integrar el framework de p
 
 ![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/2.png)
 
-![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/6.png) 
+![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/6.png)
 
 ![enter image description here](http://www.clipclap.co/docs/tutorials/xamarin/img/4.png)
 
@@ -41,7 +41,7 @@ Sigue los siguientes pasos para conocer cómo se debe integrar el framework de p
 Importa el *ClipClapCharge framework* en la clase donde la vayas a usar :
 
     using clipclapcharge;
-    
+
 En tu clase implementa SaveTokenListener:
 
     public partial class YOUR_CLASS_NAME : SUPER_CLASS_NAME, SaveTokenListener
@@ -49,27 +49,30 @@ En tu clase implementa SaveTokenListener:
 Inicializa el servicio que se encargará de abrir ClipClap Billetera:
 
     CCService ccService = new CCService();
-    
+
 Para obtener respuesta de la aplicación ClipClap Billetera cuando el cobro se haya realizado:
-    
-    ccService.setCallBack("YOUR_URL_SCHEME://" ó "UNIVERSAL_LINKING");    
+
+    ccService.setCallBack("YOUR_URL_SCHEME://" ó "UNIVERSAL_LINKING");
 
 Con la llave secreta que obtienes abriendo una cuenta ClipClap Datáfano:
 
-    CCBilleteraPayment cc = new CCBilleteraPayment("YOUR_SECRET_KEY");
+    CCBilleteraPayment cc = new CCBilleteraPayment("YOUR_SECRET_KEY", "PAYMENT_REF");
+
+> ***IMPORTANTE:*** Es obligatorio remplazar el campo PAYMENT_REF por su referencia de pago única, es decir, usted debe crear un nueva referencia de pago por cada transación y asegurarse de que sea único en su negocio.
+
 
 Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
 
- 1) *Forma 'producto por producto':* Esta opción permite agregar al cobro productos de forma individual especificando su nombre, precio, cantidad y el impuesto que se le aplica al producto. Así: 
-    
+ 1) *Forma 'producto por producto':* Esta opción permite agregar al cobro productos de forma individual especificando su nombre, precio, cantidad y el impuesto que se le aplica al producto. Así:
+
     //Por cada producto haga esto:
     string nombreProducto = @"Camisa Polo";
     int precio = 25000;
     int cantidad = 3;
-    
+
     //Si lo quiere CON impuesto
     cc.addItem (nombreProducto, cantidad, precio, CCBilleteraPayment.IVA_REGULAR_16_);
-    
+
     //Si lo quiere SIN impuesto
     cc.addItem (nombreProducto, cantidad, precio);
 
@@ -80,12 +83,12 @@ Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
     int totalSinImpuesto = 20000;
     int impuesto = 1600; //Se aplicó Consumo Regular del 8% sobre el total sin impuesto.
     int propina = 2000   //Esto es opcional.
-    
+
     //Así para SI incluir propina.
     cc.addTotal (descripcion, totalSinImpuesto, impuesto, propina);
-	    
+
     //Así para NO incluir propina.
-    cc.addTotal (descripcion, totalSinImpuesto, impuesto, 0);                                        
+    cc.addTotal (descripcion, totalSinImpuesto, impuesto, 0);
 
 > ***Nota:*** Estas dos formas de crear el cobro son mutuamente excluyentes. Si usted utiliza ambas formas al mismo tiempo, la *forma 'total-impuesto-tip'* prevalece sobre la *forma 'producto-por-producto'*.
 
@@ -94,7 +97,7 @@ Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
 **Paso 3: Decirle a ClipClap Billetera que realice el cobro**
 
     //Obteniendo de ClipClap un token único para este cobro. Hasta este momento todavía el cobro no se ha hecho efectivo.
-    
+
     try
 	{
 		//Registrando esta instancia con la interfaz 'SaveTokenListener'.
@@ -117,35 +120,35 @@ Hay dos forma de crear un cobro para que ClipClap Billetera lo gestione:
 
 		//Obteniendo el url para abrir ClipClapBilletera
 		string link = ccService.getUrlDeep ();
-		
-		try 
+
+		try
 		{
-			/*Para abrir ClipClap Billetera en Xamarin iOS*/				
-			InvokeOnMainThread (delegate {  
+			/*Para abrir ClipClap Billetera en Xamarin iOS*/
+			InvokeOnMainThread (delegate {
 				UIApplication.SharedApplication.OpenUrl(new Foundation.NSUrl(link));
 			});
-			
+
 			//--------------------------------
-			
+
 			/*Para abrir ClipClap Billetera en Xamarin Android*/
 			var uri = Android.Net.Uri.Parse (link);
             var intent = new Intent (Intent.ActionView, uri);
             StartActivity (intent);
-		
+
 		} catch (Exception ex) {
-                           	/*Para abrir ClipClap Billetera APPSTORE*/				
-			InvokeOnMainThread (delegate {  
+                           	/*Para abrir ClipClap Billetera APPSTORE*/
+			InvokeOnMainThread (delegate {
 				UIApplication.SharedApplication.OpenUrl(new Foundation.NSUrl(
 				CCBilleteraPayment.BILLETERA_APPSTORE));
 			});
-			
+
 				/*Para abrir ClipClap Billetera PLAYSTORE*/
 		         	var uri = Android.Net.Uri.Parse (CCBilleteraPayment.BILLETERA_PLAYSTORE);
 				var intent = new Intent (Intent.ActionView, uri);
-				StartActivity (intent);	
+				StartActivity (intent);
 		}
 	}
-		
+
 
 > ***IMPORTANTE:*** Si al momento de guardar el ´token´ en su sistema de información este falla, no convoque a ClipClap Billetera para que gestione el pago.
 
@@ -171,7 +174,7 @@ Si el cobro se realizó exitosamente:
     "Your universal linking?response=ok"
 
 Si el cobro fue rechazado por el cliente:
-  
+
     "Your universal linking?response=cancel" //El cobro fue rechazado por el cliente.
 
 Si hubo un error realizando el cobro:
@@ -185,13 +188,13 @@ Si el cobro se realizó exitosamente:
     "Your_URL_Scheme://?response=ok"
 
 Si el cobro fue rechazado por el cliente:
-  
+
     "Your_URL_Scheme://?response=cancel" //El cobro fue rechazado por el cliente.
 
 Si hubo un error realizando el cobro:
 
     "Your_URL_Scheme://?response=error&message=Mostrar este error en tu aplicación Xamarin iOS"
-    
+
 ***Para Android***
 
 Si el cobro se realizó exitosamente:
@@ -199,7 +202,7 @@ Si el cobro se realizó exitosamente:
     "Your_URL?response=ok"
 
 Si el cobro fue rechazado por el cliente:
-  
+
     "Your_URL?response=cancel" //El cobro fue rechazado por el cliente.
 
 Si hubo un error realizando el cobro:
