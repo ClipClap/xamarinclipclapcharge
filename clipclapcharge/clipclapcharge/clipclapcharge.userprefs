@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="clipclapcharge.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CCBilleteraPayment.cs">
+    <Files>
+      <File FileName="CCBilleteraPayment.cs" Line="28" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint traceExpression="{content}" file="/Users/josedavidmantilla/StudioProjects/sdk/Xamarin/IOSparking/IOSparking/ViewController.cs" line="55" column="1" />

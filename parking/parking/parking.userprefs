@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="parking.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_23" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.ZX1D62KRTS" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
     <Files>
-      <File FileName="MainActivity.cs" Line="130" Column="5" />
+      <File FileName="MainActivity.cs" Line="57" Column="34" />
       <File FileName="Item.cs" Line="1" Column="1" />
       <File FileName="ItemAdapter.cs" Line="1" Column="1" />
     </Files>

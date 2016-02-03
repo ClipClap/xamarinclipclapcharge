@@ -13,6 +13,8 @@ namespace clipclapcharge
 		private  string ITEMVALUE="itemValue";
 		private  string TAXID="taxId";
 		private  string DETAILS="details";
+
+		private  string PAYMENTREF="paymentRef";
 		public static  int CONSUMO_REGULAR_8=5;
 		public static  int IVA_EXCLUIDO_0=4;
 		public static  int IVA_EXCENTO_0=3;
@@ -27,12 +29,13 @@ namespace clipclapcharge
 		public static  string BILLETERA_PLAYSTORE="https://play.google.com/store/apps/details?id=clipclap.app.clip&hl=es";
 		public static  string BILLETERA_APPSTORE="'https://itunes.apple.com/app/id1000072986";
 
-		public CCBilleteraPayment (string secretKey)
+		public CCBilleteraPayment (string secretKey, string paymentRef)
 		{
 			itemsArray = new JArray();
 			itemClipClap= new JObject();
 			itemClipClap [SECRETKEY] = secretKey;
 			itemClipClap [DETAILS] = itemsArray;
+			itemClipClap [PAYMENTREF] = paymentRef;
 		}
 
 		public void addItem(String name, int count, int value, int taxId ) {

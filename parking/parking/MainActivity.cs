@@ -70,7 +70,7 @@ namespace parking
 			button.Click += delegate {
 
 
-				cc = new CCBilleteraPayment (secretkey.Text);
+				cc = new CCBilleteraPayment (secretkey.Text, "REF"+Math.Random());
 
 				//Add Total, description, netTotal, tax, tip
 				cc.addTotal ("total", 100, 200,20);
